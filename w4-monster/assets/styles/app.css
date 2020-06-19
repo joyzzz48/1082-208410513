@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  background: #2c2c2c;
+}
+
+#monkill h2 {
+  font-size: 1.25rem;
+  margin: 1rem 0.5rem;
+}
+
+#monkill progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 80%;
+  height: 2rem;
+  color: #ff0062;
+  border: 1px solid #a927f5;
+}
+
+#monkill progress[value]::-webkit-progress-bar,
+#monkill progress[value] {
+  background-color: #eee;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+#monkill progress[value]::-webkit-progress-value {
+  background-color: #a927f5;
+  transition: all 0.2s ease-out;
+}
+
+#monkill progress[value]::-moz-progress-bar {
+  background-color: #a927f5;
+  transition: all 0.2s ease-out;
+}
+
+#monkill button {
+  font: inherit;
+  background: #ff0062;
+  border: 1px solid #ff0062;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+#monkill button:focus {
+  outline: none;
+}
+
+#monkill button:hover,
+#monkill button:active {
+  background: #a927f5;
+  border-color: #a927f5;
+}
+
+#monkill #health-levels,
+#monkill #controls {
+  margin: 2rem auto;
+  margin-top: 100px;
+  width: 30rem;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  background: white;
+}
+
+#monkill #controls {
+  display: flex;
+  flex-direction: column;
+}
+
+#monkill #bonus-life {
+  font-weight: bold;
+  color: white;
+  background: #ff0062;
+  border: 1px solid #ff0062;
+  padding: 0.15rem 0.5rem;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 0.5rem;
+}
